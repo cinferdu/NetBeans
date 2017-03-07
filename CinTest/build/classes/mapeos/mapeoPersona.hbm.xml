@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name ="hibernatenormal.Persona"  table="nombres">
+        <id name="id" column="DNi">
+            <generator class="identy" />
+        </id>
+        <property name="nombre" type="string" column="Nombre" />
+        <property name="apellido" type="string" column="Apellido" />
+        <property name="dni" type="int" column="DNI" />
+        <property name="edad" type="int" column="edad" />
+    </class>
+    
+</hibernate-mapping>
